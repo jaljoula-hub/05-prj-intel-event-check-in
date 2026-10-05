@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -31,7 +31,15 @@
         Attendance: <span id="attendeeCount">0</span>/50
       </div>
       <div class="progress-container">
-        <div id="progressBar" class="progress-bar"></div>
+        <div
+          id="progressBar"
+          class="progress-bar"
+          role="progressbar"
+          aria-label="Event attendance"
+          aria-valuemin="0"
+          aria-valuemax="50"
+          aria-valuenow="0"
+        ></div>
       </div>
     </div>
     <div class="container">
